@@ -1,0 +1,21 @@
+.user {
+  &__avatar {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 8px;
+  }
+  &__button {
+    padding: 6px;
+  }
+
+  &__name {
+    @include mobile {
+      display: none;
+    }
+  }
+}

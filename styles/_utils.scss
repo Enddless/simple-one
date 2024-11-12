@@ -1,0 +1,15 @@
+// чтобы интерактивные элементы были доступными
+.visually-hidden {
+  @include visually-hidden;
+}
+//   скроет элемент на мобиле
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}

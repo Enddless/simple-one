@@ -1,0 +1,26 @@
+.button {
+  @include flex-center;
+  @include reset-button;
+
+  height: var(--button-height);
+  cursor: pointer;
+  border: var(--border);
+  border-radius: var(--border-radius-small);
+
+  @include hover {
+    background-color: var(--button-hover);
+  }
+
+  &--save {
+    color: var(--color-light);
+    background-color: var(--color-accent-alt);
+
+    @include hover {
+      color: var(--color-accent-alt);
+    }
+  }
+
+  &--no-bordered {
+    border: none;
+  }
+}

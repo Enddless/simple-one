@@ -1,0 +1,25 @@
+.data-list {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  display: flex;
+
+  &__item {
+    border: 1px solid #99d5ff;
+    border-radius: 4px;
+    padding: 2px 8px;
+    background: #e5f4ff;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+
+    & span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @include tablet {
+        max-width: 158px;
+      }
+    }
+  }
+}

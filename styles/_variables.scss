@@ -1,0 +1,25 @@
+:root {
+  --color-dark: #2e3238;
+  --color-light: #fff;
+  --color-accent: #e5f4ff;
+  --color-accent-alt: #0078cf;
+  --color-gray: #fcfcfd;
+  --color-gray-alt: #abb1ba;
+  --color-required: #b21f00;
+
+  --border: 1px solid #d5d8dd;
+
+  --border-radius-small: 4px;
+
+  --shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.04);
+  --font-family: 'OpenSans-Regular', sans-serif;
+  --second-family: 'Montserrat-Regular', sans-serif;
+
+  --section-padding: 16px;
+
+  --input-height: 32px;
+  --button-height: 32px;
+  --button-hover: rgba(15, 42, 128, 0.06);
+
+  --transition-duration: 1s;
+}

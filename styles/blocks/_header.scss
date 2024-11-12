@@ -1,0 +1,32 @@
+.header {
+  padding: 0 16px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--border);
+  width: 100%;
+  position: fixed;
+  z-index: 15;
+  background-color: var(--color-light);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  &__search {
+    width: 296px;
+    &-button {
+      border: none;
+      width: 16px;
+      height: 20px;
+      & svg * {
+        --currentColor: red;
+        fill: var(--currentColor);
+      }
+    }
+  }
+}

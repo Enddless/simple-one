@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./favicon/favicon.ico" type="image/ico">
+  <link rel="icon" href="./favicon/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="./favicon/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="./favicon/android-chrome-192x192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="./favicon/android-chrome-512x512.png" type="image/png" sizes="512x512">
+  <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png" sizes="180x180">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <meta name="description"
+    content="Компания SimpleOne — разработчик программного обеспечения, осуществляет внедрение ESM и ITSM систем.">
+  <title>SimpleOne — ESM-платформа для автоматизации бизнес-процессов</title>
+</head>
+
+<body>
+  <header class="header">
+    <button class="nav__icon-button button button--no-bordered visible-mobile" type="button">
+      <img src="./images/icons/other-light.svg" alt="other-light icon" width="24" height="24" loading="lazy">
+    </button>
+    <a href="https://simpleone.ru/" class="header__logo logo hidden-mobile">
+      <img src="./images/logo.svg" alt="SimpleOne logo" class="logo__image" width="174" height="24" loading="lazy" />
+    </a>
+    <div class="header__inner">
+      <div class="header__search field hidden-mobile">
+        <form class="field__container">
+          <input type="text" class="header__search-input field__input" placeholder="Поиск">
+          <button class="header__search-button field__button button">
+            <img src="./images/icons/loupe-light.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+          </button>
+        </form>
+      </div>
+      <div class="header__user user">
+        <div class="user__info">
+          <img src="./images/header/user-avatar.jpg" alt="Аватар" width="32" height="32" loading="lazy"
+            class="user__avatar">
+          <div class="user__name">
+            <p class="user__name-text">Максим Галактионов</p>
+          </div>
+          <button class="user__button button">
+            <img src="./images/icons/settings.svg" alt="Настройки" width="20" height="20" class="icons__image">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <nav class="nav">
+      <ul class="nav__icons">
+        <li class="nav__icons-item">
+          <button class="nav__icon-button button button--no-bordered" type="button">
+            <img src="./images/icons/other.svg" alt="other icon" width="24" height="24" loading="lazy">
+          </button>
+        </li>
+        <li class="nav__icons-item  hidden-mobile">
+          <button class="nav__icon-button button button--no-bordered" type="button">
+            <img src="./images/icons/star.svg" alt="star icon" width="24" height="24" loading="lazy">
+          </button>
+        </li>
+      </ul>
+      <div class="nav__menu">
+        <form class="nav__menu-search">
+          <div class="field__container">
+            <input type="text" class="nav__search-input field__input" placeholder="Поиск по меню">
+            <button class="nav__menu-search-button field__button button">
+              <img src="./images/icons/filter.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+            </button>
+          </div>
+          <button class="field__button button">
+            <img src="./images/icons/no-pin.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+          </button>
+        </form>
+        <ul class="nav__menu-list">
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              <span class="nav__menu-link">Моя работа</span>
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button button button--transparent">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Структура портала
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Личное расписание
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Отсутствие на рабочем месте
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Портфель услуг
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Дашборды
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Доски задач
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Обращения
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              События
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Инциденты
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Проблемы
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Настройка каталогов
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Запросы на обслуживание
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Запросы на изменение
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Управление конфигурациями
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Управление уровнем услуг
+            </button>
+          </li>
+          <li class="nav__menu-item">
+            <button class="nav__menu-button button">
+              <img src="./images/icons/arrow-right.svg" alt="Стрелка вправо" width="16" height="20" loading="lazy"
+                class="nav__menu-icon">
+              Настройка соответствий
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <form class="form">
+        <header class="form__header">
+          <ul class="form__header-btns">
+            <li class="form__header-btn">
+              <p class="form__header-subtask">Подзадача</p>
+              <button class="form__header-button  button" type="button" onclick="dialogOverlay.showModal()">
+                Создать
+              </button>
+            </li>
+            <li class="form__header-btn hidden-mobile">
+              <button class="form__header-button button button--save" type="submit">
+                Сохранить
+              </button>
+              <button class="form__header-button button">
+                Сохранить и выйти
+              </button>
+            </li>
+          </ul>
+          <h2 class="form__title">
+            STSK0004783 На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для
+            агента если он Caller
+          </h2>
+        </header>
+        <div class="form__body">
+          <div class="form__body-top  grid grid--2">
+            <fieldset class="field">
+              <label for="theme" class=" field__label">
+                <span class="field__label--required">* </span>Тема
+              </label>
+              <div class="field__container">
+                <input type="text" id="theme" class="field__input" placeholder=""
+                  value="На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller">
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label for="status" class=" field__label">Статус</label>
+              <div class="field__container">
+                <input type="text" id="status" class="field__input" placeholder="" value="Новая">
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label for="description" class="field__label">Описание</label>
+              <div class="field__container">
+                <input type="text" id="description" class="field__input" placeholder="">
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label for="product" class="field__label">Продукт</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <input type="text" id="product" class="field__input" placeholder="" value="Paltform">
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/loupe.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label for="notes" class="field__label">
+                <span class="field__label--required">* </span>Рабочие заметки
+              </label>
+              <div class="field__container">
+                <input type="text" id="notes" class="field__input" placeholder=""
+                  value="Проверить ACL id=172830402014193655">
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label for="priority" class="field__label">Приоритет</label>
+              <div class="field__container">
+                <input type="text" id="priority" class=" field__input" placeholder="" value="Средний">
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label class="field__label">Ответственный</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <ul class="data-list field__input">
+                    <li class="data-list__item">
+                      <span>Константин Константинопольский </span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/plus.svg" alt="plus icon" width="20" height="20" loading="lazy">
+                </button>
+                <button class="field__button button">
+                  <img src="./images/icons/loupe.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label class="field__label">Группа</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <ul class="data-list field__input">
+                    <li class="data-list__item"> <span>Support Group</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/plus.svg" alt="plus icon" width="20" height="20" loading="lazy">
+                </button>
+                <button class="field__button button">
+                  <img src="./images/icons/loupe.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form__body-center">
+            <fieldset class="field">
+              <label for="comment" class="field__label">Комментарий</label>
+              <div class="field__container">
+                <input type="text" id="comment" class="field__input">
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label class="field__label">Согласующие</label>
+              <div class="field__btns">
+                <div class="form__coordinating field__container">
+                  <ul class="data-list field__input">
+                    <li class="data-list__item">
+                      <span>Андрей Пивоваров</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Максим Галактионов</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Алла Лин</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Константин Константинопольский Константинович</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Игорь Иванченко</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Юлия Эйчаровна</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Артём Подпрыгайко-Саппортов</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Илья Вазнец</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Наталья Нашевна</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Евгения Итамовна</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Алиса Киральчук</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                  </ul>
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/plus.svg" alt="plus icon" width="20" height="20" loading="lazy">
+                </button>
+                <button class="field__button button">
+                  <img src="./images/icons/loupe.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form__body-bottom  grid grid--2">
+            <fieldset class="field">
+              <label for="when_is_the_open" class="field__label">Когда открыто</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <input type="date" id="when_is_the_open" class="field__input" value="2024-10-22">
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/calendar.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label for="when_created" class="field__label">Когда создано</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <input type="date" id="when_created" class="field__input" value="2024-10-22">
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/calendar.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label class="field__label">Кем открыто</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <ul class="data-list field__input">
+                    <li class="data-list__item"><span>Андрей Пивоваров</span> </li>
+                  </ul>
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/plus.svg" alt="plus icon" width="20" height="20" loading="lazy">
+                </button>
+                <button class="field__button button">
+                  <img src="./images/icons/loupe.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label class="field__label">Кем создано</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <ul class="data-list field__input">
+                    <li class="data-list__item"><span>Андрей Пивоваров</span></li>
+                  </ul>
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/plus.svg" alt="plus icon" width="20" height="20" loading="lazy">
+                </button>
+                <button class="field__button button">
+                  <img src="./images/icons/loupe.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </form>
+    </section>
+    <dialog class="dialog-overlay" id="dialogOverlay">
+      <form class="dialog-overlay__form form" method="dialog">
+        <header class="dialog-overlay__header form__header">
+          <ul class="dialog-overlay__header-btns form__header-btns">
+            <li class="dialog-overlay__header-btn ">
+              <p class="dialog-overlay__subtask form__header-subtask">Подзадача</p>
+            </li>
+            <li class="dialog-overlay__buttons form__header-btn">
+              <button class="dialog-overlay__button form__header-button button button--save" type="submit">
+                Сохранить
+              </button>
+              <button class="dialog-overlay__button form__header-button button " onclick="dialogOverlay.close()">
+                Отменить
+                <span class="visually-hidden">Close menu</span>
+              </button>
+            </li>
+          </ul>
+          <h2 class="form__title">
+            Новая запись
+          </h2>
+        </header>
+        <div class="form__body">
+          <div class="form__body-top grid grid--1">
+            <fieldset class="field">
+              <label for="theme_dialog" class=" field__label">
+                <span class="field__label--required">* </span>Тема
+              </label>
+              <div class="field__container">
+                <input type="text" id="theme_dialog" class="field__input" placeholder=""
+                  value="На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller">
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label for="status_dialog" class=" field__label">Статус</label>
+              <div class="field__container">
+                <input type="text" id="status_dialog" class="field__input" placeholder="" value="Новая">
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label for="description_dialog" class="field__label">Описание</label>
+              <div class="field__container">
+                <input type="text" id="description_dialog" class="field__input" placeholder="">
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label for="product_dialog" class="field__label">Продукт</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <input type="text" id="product_dialog" class="field__input" placeholder="" value="Paltform">
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/loupe.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label for="notes_dialog" class="field__label">
+                <span class="field__label--required">* </span>Рабочие заметки
+              </label>
+              <div class="field__container">
+                <input type="text" id="notes_dialog" class="field__input" placeholder=""
+                  value="Проверить ACL id=172830402014193655">
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label for="priority_dialog" class="field__label">Приоритет</label>
+              <div class="field__container">
+                <input type="text" id="priority_dialog" class=" field__input" placeholder="" value="Средний">
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label class="field__label">Ответственный</label>
+              <div class="field__btns">
+                <div class="field__container">
+
+                  <ul class="data-list field__input">
+                    <li class="data-list__item"><span>Константин Константинопольский</span> </li>
+                  </ul>
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/plus.svg" alt="plus icon" width="20" height="20" loading="lazy">
+                </button>
+                <button class="field__button button">
+                  <img src="./images/icons/loupe.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label class=" field__label">Группа</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <ul class="data-list field__input">
+                    <li class="data-list__item"><span>Support Group</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/plus.svg" alt="plus icon" width="20" height="20" loading="lazy">
+                </button>
+                <button class="field__button button">
+                  <img src="./images/icons/loupe.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form__body-center grid grid--1">
+            <fieldset class="field">
+              <label for="comment_dialog" class="field__label">Комментарий</label>
+              <div class="field__container">
+                <input type="text" id="comment_dialog" class="field__input">
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label class="field__label">Согласующие</label>
+              <div class="field__btns">
+                <div class="form__coordinating field__container">
+                  <ul class="data-list field__input">
+                    <li class="data-list__item">
+                      <span>Андрей Пивоваров</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Максим Галактионов</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Алла Лин</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Константин Константинопольский Константинович</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Игорь Иванченко</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Юлия Эйчаровна</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Артём Подпрыгайко-Саппортов</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Илья Вазнец</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Наталья Нашевна</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Евгения Итамовна</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                    <li class="data-list__item">
+                      <span>Алиса Киральчук</span>
+                      <img src="./images/icons/close-x.svg" alt="" width="16" height="16" loading="lazy" class="">
+                    </li>
+                  </ul>
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/plus.svg" alt="plus icon" width="20" height="20" loading="lazy">
+                </button>
+                <button class="field__button button">
+                  <img src="./images/icons/loupe.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form__body-bottom grid grid--1">
+            <fieldset class="field">
+              <label for="when_is_the_open_dialog" class="field__label">Когда открыто</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <input type="date" id="when_is_the_open_dialog" class="field__input" value="2024-10-22">
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/calendar.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label for="when_created_dialog" class="field__label">Когда создано</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <input type="date" id="when_created_dialog" class="field__input" value="2024-10-22">
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/calendar.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label class="field__label">Кем открыто</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <ul class="data-list field__input">
+                    <li class="data-list__item"><span>Андрей Пивоваров </span></li>
+                  </ul>
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/plus.svg" alt="plus icon" width="20" height="20" loading="lazy">
+                </button>
+                <button class="field__button button">
+                  <img src="./images/icons/loupe.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <label class="field__label">Кем создано</label>
+              <div class="field__btns">
+                <div class="field__container">
+                  <ul class="data-list field__input">
+                    <li class="data-list__item"><span>Андрей Пивоваров </span> </li>
+                  </ul>
+                </div>
+                <button class="field__button button">
+                  <img src="./images/icons/plus.svg" alt="plus icon" width="20" height="20" loading="lazy">
+                </button>
+                <button class="field__button button">
+                  <img src="./images/icons/loupe.svg" alt="loupe icon" width="20" height="20" loading="lazy">
+                </button>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </form>
+    </dialog>
+  </main>
+</body>
+
+</html>

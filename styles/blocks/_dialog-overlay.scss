@@ -1,0 +1,52 @@
+.dialog-overlay {
+  width: 100%;
+  height: calc(100svh - 32px);
+  margin: 0;
+  border: none;
+  padding: 14px 20px;
+  position: fixed;
+
+  &::backdrop {
+    background: rgba(11, 12, 14, 0.4);
+  }
+
+  &:modal {
+    width: 800px;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__list {
+    @include flex-center;
+
+    flex-direction: column;
+    row-gap: 30px;
+    min-height: 80vh;
+  }
+
+  & .form__header-btns {
+    justify-content: space-between;
+    width: calc(100% - 32px);
+    align-items: center;
+    top: 16px;
+    height: 32px;
+    box-shadow: none;
+  }
+
+  & .form__header-btn {
+    justify-content: flex-end;
+  }
+
+  & .form__header-subtask {
+    @include mobile {
+      text-transform: none;
+      font-size: 20px;
+    }
+  }
+  & .form__title {
+    margin-top: 48px;
+  }
+}

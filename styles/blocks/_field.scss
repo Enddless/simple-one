@@ -1,0 +1,55 @@
+.field {
+  --fieldInputHeight: var(--input-height);
+  --fieldInputBgColor: var(--color-gray);
+  --fieldInputBorderRadius: var(--border-radius-small);
+  --fieldInputBorder: var(--border);
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 8px;
+
+  &__label {
+    font-weight: 600;
+    margin-bottom: 3px;
+
+    &--required {
+      color: var(--color-required);
+    }
+  }
+
+  &__container {
+    width: 100%;
+    padding: 4px;
+    min-height: var(--input-height);
+    background-color: var(--color-gray);
+    justify-content: space-between;
+    border: var(--border);
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @include hover {
+      background-color: var(--fieldInputHoverBgColor);
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 4px;
+    width: 100%;
+  }
+
+  &__button {
+    @include square(32px);
+    flex-shrink: 0;
+
+    @include hover {
+      background-color: var(--button-hover);
+    }
+  }
+}
